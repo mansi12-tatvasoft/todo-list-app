@@ -1,0 +1,8 @@
+<main class="main">
+  <div class="container">
+    <h1>To-Do List</h1>
+    <app-form (addTodoItem)="addTodoItem($event)"></app-form><br>
+    <app-to-do-list [toDoList]="toDoList" (deleteItem)="deleteTodoItem($event)"></app-to-do-list>
+  </div>
+</main>
+<router-outlet />

@@ -1,0 +1,7 @@
+<div *ngFor="let item of toDoList">
+  <app-to-do
+    [title]="item.task"
+    [isCompleted]="item.isCompleted"
+    (deleteTodoItem)="deleteTodoItem(item)"
+  ></app-to-do>
+</div>

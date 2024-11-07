@@ -1,0 +1,19 @@
+.title {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.delete-icon{
+  max-height: 30px;
+}
+
+.delete-icon :hover {
+  opacity: 0.7;
+}

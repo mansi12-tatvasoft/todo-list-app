@@ -1,0 +1,25 @@
+<div class="center">
+  <div class="col-9">
+    <p
+      class="title"
+      [ngStyle]="{ 'text-decoration': isCompleted ? 'line-through' : 'none' }"
+    >
+      {{ title }}
+    </p>
+  </div>
+  <div class="col-1">
+    <input
+      type="checkbox"
+      [checked]="isCompleted"
+      (change)="isCompleted = !isCompleted"
+    />
+  </div>
+  <div class="col-2">
+    <img
+      src="assets/delete.png"
+      alt="Delete"
+      class="delete-icon"
+      (click)="onDelete()"
+    />
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-9">
+    <input type="text" [(ngModel)]="toDoItem.task" placeholder="Enter task" maxlength="100"/>
+  </div>
+  <div class="col-2">
+    <img
+      src="assets/icons8-add-48.png"
+      alt="Add"
+      class="add-icon"
+      (click)="onAddTodoItem()"
+    />
+  </div>
+</div>
