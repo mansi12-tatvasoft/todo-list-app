@@ -11,11 +11,11 @@ import { FormsModule } from '@angular/forms';
 export class FormComponent {
   @Output() addTodoItem = new EventEmitter<ToDoItem>();
 
-  toDoItem: ToDoItem = { task: '', isCompleted: false, isDeleted: false };
+  toDoItem: ToDoItem = { task: '', isCompleted: false };
 
   onAddTodoItem() {
     this.addTodoItem.emit(this.toDoItem);
-    this.toDoItem = { task: '', isCompleted: false, isDeleted: false };
+    this.toDoItem = { task: '', isCompleted: false};
   }
 
 }
